@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livraria Celestial</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">Livraria <span>Celestial</span></h1>
+            <p class="slogan">Onde cada página é uma estrela no céu da leitura</p>
+        </header>
+
+        <main class="main-content">
+            <section class="book-form">
+                <h2>Adicionar Novo Livro</h2>
+                <form id="addBookForm">
+                    <div class="form-group">
+                        <label for="bookTitle">Título do Livro</label>
+                        <input type="text" id="bookTitle" required placeholder="Digite o título do livro">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookAuthor">Autor</label>
+                        <input type="text" id="bookAuthor" required placeholder="Digite o nome do autor">
+                    </div>
+                    <div class="form-group">
+                        <label for="bookYear">Ano de Publicação</label>
+                        <input type="number" id="bookYear" placeholder="Ano de publicação">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-plus-circle"></i> Adicionar Livro
+                    </button>
+                </form>
+            </section>
+
+            <section class="book-list">
+                <div class="list-header">
+                    <h2>Meus Livros</h2>
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Buscar livros...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div id="booksContainer" class="books-container">
+                    <!-- Livros serão adicionados aqui via JavaScript -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 Livraria Celestial. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
